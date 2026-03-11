@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Складская Рефлексия | Клик-механика</title>
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/DwNXKrqb/IMG-3637-(1)-(1).jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1 class="title">1. Выбери предмет — 2. Нажми на зону</h1>
+        
+        <div class="zones-container">
+            <div class="drop-zone" id="storage">
+                <div class="zone-header">📦 ЗОНА ХРАНЕНИЯ</div>
+                <p>Все понятно</p>
+            </div>
+            <div class="drop-zone" id="receiving">
+                <div class="zone-header">🚚 ЗОНА ПРИЕМКИ</div>
+                <p>В процессе</p>
+            </div>
+            <div class="drop-zone" id="quarantine">
+                <div class="zone-header">⚠️ ЗОНА КАРАНТИНА</div>
+                <p>Ничего не понятно</p>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div id="items-dock">
+                <div class="draggable" id="i1"><img src="img/box.png"><span>Груз</span></div>
+                <div class="draggable" id="i2"><img src="img/truck.png"><span>Ричтрак</span></div>
+                <div class="draggable" id="i3"><img src="img/winch.png"><span>Лебедка</span></div>
+                <div class="draggable" id="i4"><img src="img/pallet.png"><span>Поддон</span></div>
+                <div class="draggable" id="i5"><img src="img/barrel.png"><span>Бочка</span></div>
+                <div class="draggable" id="i6"><img src="img/rack.png"><span>Стеллаж</span></div>
+                <div class="draggable" id="i7"><img src="img/forklift.png"><span>Погрузчик</span></div>
+                <div class="draggable" id="i8"><img src="img/crate.png"><span>Ящик</span></div>
+                <div class="draggable" id="i9"><img src="img/cone.png"><span>Конус</span></div>
+            </div>
+            <button id="reset-btn">Сбросить всё</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
