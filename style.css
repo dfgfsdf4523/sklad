@@ -44,12 +44,22 @@ body {
     padding: 20px;
     cursor: pointer;
     transition: background 0.3s;
+    min-height: 300px;
 }
 
 .drop-zone:active { background: rgba(56, 189, 248, 0.1); }
 
 .zone-header { width: 100%; text-align: center; font-size: 22px; font-weight: bold; pointer-events: none; }
-.drop-zone p { width: 100%; text-align: center; color: #94a3b8; font-size: 14px; pointer-events: none; }
+.drop-zone p { 
+    width: 100%; 
+    text-align: center; 
+    color: #94a3b8; 
+    font-size: 16px; /* Оптимальный размер для длинного текста */
+    line-height: 1.4; /* Межстрочный интервал для читаемости */
+    padding: 0 10px;
+    margin-bottom: 20px;
+    pointer-events: none; 
+}
 
 #storage { border-color: #22c55e; }
 #receiving { border-color: #eab308; }
